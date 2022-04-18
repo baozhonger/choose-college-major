@@ -15,4 +15,11 @@ If you have an opinion or suggestion on choosing your college or major, just fee
 
 ## Contribution
 
+- For GitHub users, just fork and open PRs.
+- For others, send your document to [our email](mailto:syy11cn@outlook.com) with subject `College-Major-Title-Nickname`.
 
+> Remember to replace the words with your infomation.
+
+## License
+
+CC-BY-SA-4.0 2022 [baozhonger](https://github.com/baozhonger)
