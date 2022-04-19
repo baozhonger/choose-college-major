@@ -1,5 +1,6 @@
 ---
 home: true
+heroImage: https://shaun-logo.oss-cn-beijing.aliyuncs.com/baozhonger.jpg
 heroText: 宝中毕业生择校手册
 actionText: 开始阅读
 actionLink: /introduction/
