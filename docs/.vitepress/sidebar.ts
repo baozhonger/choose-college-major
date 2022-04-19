@@ -24,6 +24,20 @@ function getSidebar(folder: string): DefaultTheme.SideBarItem[] {
   return college
 }
 
+function getCollegeSidebar(collegesPath: string) {
+  const colleges = readdirSync(docsPath + collegesPath, { withFileTypes: true })
+
+  const res = {}
+
+  colleges.forEach((college) => {
+    if (college.isDirectory())
+      res[`/colleges/${college.name}/`] = getSidebar(`/colleges/${college.name}/`)
+  })
+
+  return res
+}
+
 export const sidebar: DefaultTheme.Config['sidebar'] = {
-  '/colleges/UESTC/': getSidebar('/colleges/UESTC/'),
+  // '/colleges/UESTC/': getSidebar('/colleges/UESTC/'),
+  ...getCollegeSidebar('/colleges/'),
 }
