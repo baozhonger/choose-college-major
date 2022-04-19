@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",
+    "module": "ESNext",
+    "rootDir": "docs/.vitepress",
+    "moduleResolution": "node"
+  },
+  "include": ["docs/.vitepress/**/*"]
+}
