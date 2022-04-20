@@ -6,7 +6,10 @@ export default defineConfig({
   title: '宝中毕业生择校手册',
   description: '与大学在读的宝中毕业生们交流，从不同的角度了解你的理想院校和专业。',
   lang: 'zh-CN',
+  lastUpdated: true,
   themeConfig: {
+    editLinks: true,
+    repo: 'https://github.com/baozhonger/choose-college-major',
     nav,
     sidebar,
   },

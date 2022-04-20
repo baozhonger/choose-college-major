@@ -18,7 +18,7 @@ function getSidebar(folder: string): DefaultTheme.SideBarItem[] {
         college.push({ text: name, link: `${folder}${name}.html` })
     }
     if (major.isDirectory())
-      college.push({ text: name, children: getSidebar(`${folder}${name}/`) })
+      college.push({ text: name, collapsable: true, children: getSidebar(`${folder}${name}/`) })
   })
 
   return college
@@ -38,6 +38,5 @@ function getCollegeSidebar(collegesPath: string) {
 }
 
 export const sidebar: DefaultTheme.Config['sidebar'] = {
-  // '/colleges/UESTC/': getSidebar('/colleges/UESTC/'),
   ...getCollegeSidebar('/colleges/'),
 }
